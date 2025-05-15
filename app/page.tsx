@@ -16,6 +16,14 @@ export default function PricingPage() {
   const [userCount, setUserCount] = useState(30)
   const [freeUserCount, setFreeUserCount] = useState(10)
 
+  const handleSignUp = () => {
+    window.location.href = "https://kprise.mypasslms.us/login#register"
+  }
+
+  const handleContactUs = () => {
+    window.location.href = "https://kprise.com/contact-us-new/"
+  }
+
   // Pricing tiers based on user count
   const pricingTiers = [
     { min: 21, max: 40, monthly: 119.0, yearly: 95.2 },
@@ -125,7 +133,10 @@ export default function PricingPage() {
               </div>
             </CardContent>
             <CardFooter className="mt-auto">
-              <Button className="w-full bg-white hover:bg-slate-100 text-[#742B8F] border-2 border-[#742B8F]">
+              <Button 
+                className="w-full bg-white hover:bg-slate-100 text-[#742B8F] border-2 border-[#742B8F]"
+                onClick={handleSignUp}
+              >
                 Sign Up For Free
               </Button>
             </CardFooter>
@@ -182,7 +193,12 @@ export default function PricingPage() {
               </div>
             </CardContent>
             <CardFooter className="mt-auto">
-              <Button className="w-full bg-[#742B8F] hover:bg-[#5a226f] text-white">Sign Up For Free</Button>
+              <Button 
+                className="w-full bg-[#742B8F] hover:bg-[#5a226f] text-white"
+                onClick={handleSignUp}
+              >
+                Sign Up For Free
+              </Button>
             </CardFooter>
           </Card>
 
@@ -226,7 +242,10 @@ export default function PricingPage() {
               </ul>
             </CardContent>
             <CardFooter className="mt-auto">
-              <Button className="w-full bg-white hover:bg-slate-100 text-slate-700 border-2 border-slate-300">
+              <Button 
+                className="w-full bg-white hover:bg-slate-100 text-slate-700 border-2 border-slate-300"
+                onClick={handleContactUs}
+              >
                 Contact Us
               </Button>
             </CardFooter>

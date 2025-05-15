@@ -8,8 +8,8 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Kprise Pricing',
+  description: 'Kprise Pricing',
   generator: 'v0.dev',
 }
 
