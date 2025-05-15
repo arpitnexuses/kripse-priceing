@@ -18,10 +18,10 @@ export default function PricingTable() {
           <Table className="w-full">
             <TableHeader>
               <TableRow>
-                <TableHead className="w-[300px] text-xl font-bold">Feature</TableHead>
-                <TableHead className="text-xl font-bold">Free Forever</TableHead>
-                <TableHead className="text-xl font-bold  w-[120px] min-w-[300px]">Evaluation</TableHead>
-                <TableHead className="text-xl font-bold">Custom Enterprise</TableHead>
+                <TableHead className="w-[300px] text-xl font-bold text-black">Feature</TableHead>
+                <TableHead className="text-xl font-bold text-black">Free Forever</TableHead>
+                <TableHead className="text-xl font-bold w-[120px] min-w-[300px] text-black">Evaluation</TableHead>
+                <TableHead className="text-xl font-bold text-black">Custom Enterprise</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -47,7 +47,7 @@ export default function PricingTable() {
                     className="h-5 w-5"
                   />
                 </TableCell>
-                {/* <TableCell><Check className="h-5 w-5 text-green-500" /></TableCell> */}
+                <TableCell></TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">User Creation & Management</TableCell>
@@ -65,7 +65,7 @@ export default function PricingTable() {
                     className="h-5 w-5"
                   />
                 </TableCell>
-                {/* <TableCell><Check className="h-5 w-5 text-green-500" /></TableCell> */}
+                <TableCell></TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Group Creation & Management</TableCell>
@@ -83,7 +83,7 @@ export default function PricingTable() {
                     className="h-5 w-5"
                   />
                 </TableCell>
-                {/* <TableCell><Check className="h-5 w-5 text-green-500" /></TableCell> */}
+                <TableCell></TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Progress Tracking & Reporting - user, Course & Assessment summary report</TableCell>
@@ -101,7 +101,7 @@ export default function PricingTable() {
                     className="h-5 w-5"
                   />
                 </TableCell>
-                {/* <TableCell><Check className="h-5 w-5 text-green-500" /></TableCell> */}
+                <TableCell></TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Basic customization - Theme and custom colors - Branding & Logo</TableCell>
@@ -119,7 +119,7 @@ export default function PricingTable() {
                     className="h-5 w-5"
                   />
                 </TableCell>
-                {/* <TableCell><Check className="h-5 w-5 text-green-500" /></TableCell> */}
+                <TableCell></TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Full scale assessment engine for Assessments & Quizzes</TableCell>
@@ -137,7 +137,7 @@ export default function PricingTable() {
                     className="h-5 w-5"
                   />
                 </TableCell>
-                {/* <TableCell><Check className="h-5 w-5 text-green-500" /></TableCell> */}
+                <TableCell></TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Manage Questions & Question Pools (Create & manage)</TableCell>
@@ -155,7 +155,7 @@ export default function PricingTable() {
                     className="h-5 w-5"
                   />
                 </TableCell>
-                {/* <TableCell><Check className="h-5 w-5 text-green-500" /></TableCell> */}
+                <TableCell></TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Communication Tools (e.g., Forums, Notification - Email & Dashboard for Courses, assessments and generic notifications- Create custom templates)</TableCell>
@@ -173,7 +173,7 @@ export default function PricingTable() {
                     className="h-5 w-5"
                   />
                 </TableCell>
-                {/* <TableCell><Check className="h-5 w-5 text-green-500" /></TableCell> */}
+                <TableCell></TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Gamification</TableCell>
@@ -191,7 +191,7 @@ export default function PricingTable() {
                     className="h-5 w-5"
                   />
                 </TableCell>
-                {/* <TableCell><Check className="h-5 w-5 text-green-500" /></TableCell> */}
+                <TableCell></TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Dashboard Reports - Quickview</TableCell>
@@ -209,7 +209,7 @@ export default function PricingTable() {
                     className="h-5 w-5"
                   />
                 </TableCell>
-                {/* <TableCell><Check className="h-5 w-5 text-green-500" /></TableCell> */}
+                <TableCell></TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Certificates Creation & Management</TableCell>
@@ -227,7 +227,7 @@ export default function PricingTable() {
                     className="h-5 w-5"
                   />
                 </TableCell>
-                {/* <TableCell><Check className="h-5 w-5 text-green-500" /></TableCell> */}
+                <TableCell></TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">In-Built SCORM authoring tool / generator of SCORM files from PDF and PPT on the fly</TableCell>
@@ -245,7 +245,7 @@ export default function PricingTable() {
                     className="h-5 w-5"
                   />
                 </TableCell>
-                {/* <TableCell><Check className="h-5 w-5 text-green-500" /></TableCell> */}
+                <TableCell></TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Custom Roles & Permissions driven by Groups</TableCell>
@@ -263,7 +263,7 @@ export default function PricingTable() {
                     className="h-5 w-5"
                   />
                 </TableCell>
-                {/* <TableCell><Check className="h-5 w-5 text-green-500" /></TableCell> */}
+                <TableCell></TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Inbuilt Ticketing System for support (For Admins)</TableCell>
@@ -281,7 +281,7 @@ export default function PricingTable() {
                     className="h-5 w-5"
                   />
                 </TableCell>
-                {/* <TableCell><Check className="h-5 w-5 text-green-500" /></TableCell> */}
+                <TableCell></TableCell>
               </TableRow>
               
               {!showAllFeatures && (
@@ -304,73 +304,73 @@ export default function PricingTable() {
                     <TableCell className="font-medium">Onboarding Journey</TableCell>
                     <TableCell>Basic how to documentation</TableCell>
                     <TableCell>Basic how to documentation and stepy guide</TableCell>
-                    {/* <TableCell>Basic how to documentation and stepy guide</TableCell> */}
+                    <TableCell></TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">Dedicated Support</TableCell>
                     <TableCell>Unlimited Email Support</TableCell>
                     <TableCell>Unlimited Priority Email Support, Chat Support, On Demand Phone support***</TableCell>
-                    {/* <TableCell>Unlimited Priority Email Support, Chat Support, On Demand Phone support***</TableCell> */}
+                    <TableCell></TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">AI Backed Content Recommendation</TableCell>
                     <TableCell>Optional Add-on</TableCell>
                     <TableCell>Optional Add-on</TableCell>
-                    {/* <TableCell>Optional Add-on</TableCell> */}
+                    <TableCell></TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">AI based skill compliance matrix</TableCell>
                     <TableCell>Optional Add-on</TableCell>
                     <TableCell>Optional Add-on</TableCell>
-                    {/* <TableCell>Optional Add-on</TableCell> */}
+                    <TableCell></TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">In-Built SCORM authoring tool /generator of SCORM files from Video files on the fly</TableCell>
                     <TableCell>Optional Add-on</TableCell>
                     <TableCell>Optional Add-on</TableCell>
-                    {/* <TableCell>Optional Add-on</TableCell> */}
+                    <TableCell></TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">Mobile Accessibility</TableCell>
                     <TableCell>Optional Add-on</TableCell>
                     <TableCell>Optional Add-on</TableCell>
-                    {/* <TableCell>Optional Add-on</TableCell> */}
+                    <TableCell></TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">Integrations</TableCell>
                     <TableCell>Optional Add-on</TableCell>
                     <TableCell>Optional Add-on</TableCell>
-                    {/* <TableCell>Optional Add-on</TableCell> */}
+                    <TableCell></TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">Single Sign-On (SSO)</TableCell>
                     <TableCell>Optional Add-on</TableCell>
                     <TableCell>Optional Add-on</TableCell>
-                    {/* <TableCell>Optional Add-on</TableCell> */}
+                    <TableCell></TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">Survey engine</TableCell>
                     <TableCell>Optional Add-on</TableCell>
                     <TableCell>Optional Add-on</TableCell>
-                    {/* <TableCell>Optional Add-on</TableCell> */}
+                    <TableCell></TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">Full scale Assignments</TableCell>
                     <TableCell>Optional Add-on</TableCell>
                     <TableCell>Optional Add-on</TableCell>
-                    {/* <TableCell>Optional Add-on</TableCell> */}
+                    <TableCell></TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">Virtual (ILT) & In-person Trainings management ( with full Attendance Management)</TableCell>
                     <TableCell>Optional Add-on</TableCell>
                     <TableCell>Optional Add-on</TableCell>
-                    {/* <TableCell>Optional Add-on</TableCell> */}
+                    <TableCell></TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">Learning Path / Pathways</TableCell>
                     <TableCell>Optional Add-on</TableCell>
                     <TableCell>Optional Add-on</TableCell>
-                    {/* <TableCell>Optional Add-on</TableCell> */}
+                    <TableCell></TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">Custom add-on feature or workflow development</TableCell>
