@@ -100,7 +100,7 @@ export default function PricingPage() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-2">
                     <Image 
-                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
                       alt="Checkmark"
                       width={20}
                       height={20}
@@ -110,7 +110,7 @@ export default function PricingPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <Image 
-                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
                       alt="Checkmark"
                       width={20}
                       height={20}
@@ -120,7 +120,7 @@ export default function PricingPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <Image 
-                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
                       alt="Checkmark"
                       width={20}
                       height={20}
@@ -130,7 +130,7 @@ export default function PricingPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <Image 
-                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
                       alt="Checkmark"
                       width={20}
                       height={20}
@@ -140,7 +140,7 @@ export default function PricingPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <Image 
-                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
                       alt="Checkmark"
                       width={20}
                       height={20}
@@ -195,7 +195,7 @@ export default function PricingPage() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-2">
                     <Image 
-                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
                       alt="Checkmark"
                       width={20}
                       height={20}
@@ -205,7 +205,7 @@ export default function PricingPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <Image 
-                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
                       alt="Checkmark"
                       width={20}
                       height={20}
@@ -215,7 +215,7 @@ export default function PricingPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <Image 
-                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
                       alt="Checkmark"
                       width={20}
                       height={20}
@@ -235,7 +235,7 @@ export default function PricingPage() {
                   </li> */}
                   <li className="flex items-start gap-2">
                     <Image 
-                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
                       alt="Checkmark"
                       width={20}
                       height={20}
@@ -265,7 +265,7 @@ export default function PricingPage() {
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <Image 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
                     alt="Checkmark"
                     width={20}
                     height={20}
@@ -275,7 +275,7 @@ export default function PricingPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Image 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
                     alt="Checkmark"
                     width={20}
                     height={20}
@@ -285,7 +285,7 @@ export default function PricingPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Image 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
                     alt="Checkmark"
                     width={20}
                     height={20}
@@ -295,7 +295,7 @@ export default function PricingPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Image 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
                     alt="Checkmark"
                     width={20}
                     height={20}
@@ -305,7 +305,7 @@ export default function PricingPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Image 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
                     alt="Checkmark"
                     width={20}
                     height={20}
@@ -315,7 +315,7 @@ export default function PricingPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Image 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
                     alt="Checkmark"
                     width={20}
                     height={20}

@@ -34,14 +34,14 @@ export default function PricingTable() {
                 <TableCell className="font-medium text-lg text-left px-12 py-6">Course Creation & Management (Unlimited)</TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
                 </TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
@@ -51,14 +51,14 @@ export default function PricingTable() {
                 <TableCell className="font-medium text-lg text-left px-12 py-6">User Creation & Management</TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
                 </TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
@@ -68,14 +68,14 @@ export default function PricingTable() {
                 <TableCell className="font-medium text-lg text-left px-12 py-6">Group Creation & Management</TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
                 </TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
@@ -85,14 +85,14 @@ export default function PricingTable() {
                 <TableCell className="font-medium text-left text-lg px-12 py-6">Progress Tracking & Reporting - user, Course & Assessment summary report</TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
                 </TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
@@ -102,14 +102,14 @@ export default function PricingTable() {
                 <TableCell className="font-medium text-left text-lg px-12 py-6">Basic customization - Theme and custom colors - Branding & Logo</TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
                 </TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
@@ -119,14 +119,14 @@ export default function PricingTable() {
                 <TableCell className="font-medium text-left text-lg px-12 py-6">Full scale assessment engine for Assessments & Quizzes</TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
                 </TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
@@ -136,14 +136,14 @@ export default function PricingTable() {
                 <TableCell className="font-medium text-left text-lg px-12 py-6">Manage Questions & Question Pools (Create & manage)</TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
                 </TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
@@ -153,14 +153,14 @@ export default function PricingTable() {
                 <TableCell className="font-medium text-left text-lg px-12 py-6">Communication Tools (e.g., Forums, Notification - Email & Dashboard for Courses, assessments and generic notifications- Create custom templates)</TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
                 </TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
@@ -170,14 +170,14 @@ export default function PricingTable() {
                 <TableCell className="font-medium text-left text-lg px-12 py-6">Gamification</TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
                 </TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
@@ -187,14 +187,14 @@ export default function PricingTable() {
                 <TableCell className="font-medium text-left text-lg px-12 py-6">Dashboard Reports - Quickview</TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
                 </TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
@@ -204,14 +204,14 @@ export default function PricingTable() {
                 <TableCell className="font-medium text-left text-lg px-12 py-6">Certificates Creation & Management</TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
                 </TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
@@ -221,14 +221,14 @@ export default function PricingTable() {
                 <TableCell className="font-medium text-left text-lg px-12 py-6">In-Built SCORM authoring tool / generator of SCORM files from PDF and PPT on the fly</TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
                 </TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
@@ -238,14 +238,14 @@ export default function PricingTable() {
                 <TableCell className="font-medium text-lg text-left px-12 py-6">Custom Roles & Permissions driven by Groups</TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
                 </TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
@@ -255,14 +255,14 @@ export default function PricingTable() {
                 <TableCell className="font-medium text-left text-lg px-12 py-6">Inbuilt Ticketing System for support (For Admins)</TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
                 </TableCell>
                 <TableCell className="text-center px-12 py-6">
                   <img 
-                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png" 
                     alt="checkmark" 
                     className="h-6 w-6 mx-auto"
                   />
