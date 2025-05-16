@@ -10,7 +10,7 @@ export default function PricingTable() {
   return (
     <div className="container mx-auto px-4 py-2 max-w-7xl">
       <div className="mt-16">
-        <h2 className="text-5xl text-center text-slate-800 mb-[70px]">
+        <h2 className="text-4xl text-center text-slate-800 mb-[70px]">
           <span className="font-normal">Compare</span>{" "}
           <span className="font-bold">Plans And Features</span>
         </h2>
