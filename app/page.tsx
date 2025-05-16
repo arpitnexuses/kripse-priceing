@@ -117,6 +117,36 @@ export default function PricingPage() {
                     />
                     <span>Free for life time</span>
                   </li>
+                  <li className="flex items-start gap-2">
+                    <Image 
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                      alt="Checkmark"
+                      width={20}
+                      height={20}
+                      className="mt-0.5 flex-shrink-0"
+                    />
+                    <span>Storage upto 10GB</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Image 
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                      alt="Checkmark"
+                      width={20}
+                      height={20}
+                      className="mt-0.5 flex-shrink-0"
+                    />
+                    <span>Unlimited Email Support</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Image 
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                      alt="Checkmark"
+                      width={20}
+                      height={20}
+                      className="mt-0.5 flex-shrink-0"
+                    />
+                    <span>All features included, no restriction</span>
+                  </li>
                 </ul>
               </div>
             </CardContent>
@@ -136,6 +166,11 @@ export default function PricingPage() {
               <CardTitle className="text-2xl text-[#742B8F]">Evaluation</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 flex-grow]">
+              {billingCycle === "yearly" && (
+                <div className="text-sm text-[#742B8F] text-left font-medium -mt-2 mb-1 bg-purple-50 px-3 py-1.5 rounded-md">
+                  Price applies when paid annually in a single payment
+                </div>
+              )}
               <div className="flex items-baseline">
                 <h3 className="text-5xl font-bold text-slate-800">{getCurrentPrice()}$</h3>
                 <span className="text-xl text-slate-600 ml-2">/Month</span>
@@ -176,6 +211,36 @@ export default function PricingPage() {
                       className="mt-0.5 flex-shrink-0"
                     />
                     <span className="leading-relaxed">Free access for 3 months and extendable upto 6 months with verification</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Image 
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                      alt="Checkmark"
+                      width={20}
+                      height={20}
+                      className="mt-0.5 flex-shrink-0"
+                    />
+                    <span>Storage upto 20GB</span>
+                  </li>
+                  {/* <li className="flex items-start gap-2">
+                    <Image 
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                      alt="Checkmark"
+                      width={20}
+                      height={20}
+                      className="mt-0.5 flex-shrink-0"
+                    />
+                    <span>Unlimited Priority Email Support, Chat, Phone support</span>
+                  </li> */}
+                  <li className="flex items-start gap-2">
+                    <Image 
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                      alt="Checkmark"
+                      width={20}
+                      height={20}
+                      className="mt-0.5 flex-shrink-0"
+                    />
+                    <span>All features included, no restriction</span>
                   </li>
                 </ul>
               </div>
@@ -269,6 +334,38 @@ export default function PricingPage() {
             </CardFooter>
           </Card>
         </div>
+      </div>
+
+      <div className="flex justify-center mt-4 mb-12">
+        <Button 
+          onClick={() => {
+            const pricingTable = document.querySelector('.mt-16');
+            if (pricingTable) {
+              pricingTable.scrollIntoView({ behavior: 'smooth' });
+              // Set showAllFeatures to true in PricingTable component
+              const pricingTableComponent = document.querySelector('[data-show-all-features]');
+              if (pricingTableComponent) {
+                pricingTableComponent.setAttribute('data-show-all-features', 'true');
+              }
+            }
+          }}
+          className="bg-[#742B8F] hover:bg-[#5a226f] text-white px-8 py-6 text-lg font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
+        >
+          Compare All Features
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="24" 
+            height="24" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="2" 
+            strokeLinecap="round" 
+            strokeLinejoin="round"
+          >
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+        </Button>
       </div>
 
       <LogoSection />

@@ -1,13 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { ChevronDown, ChevronUp } from "lucide-react"
-import { Button } from "@/components/ui/button"
 
 export default function PricingTable() {
   const [showAllFeatures, setShowAllFeatures] = useState(false);
 
+  useEffect(() => {
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'data-show-all-features') {
+          const element = mutation.target as HTMLElement;
+          setShowAllFeatures(element.getAttribute('data-show-all-features') === 'true');
+        }
+      });
+    });
+
+    const element = document.querySelector('[data-show-all-features]');
+    if (element) {
+      observer.observe(element, { attributes: true });
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="container mx-auto px-2 py-2 max-w-6xl">
+    <div className="container mx-auto px-2 py-2 max-w-6xl" data-show-all-features={showAllFeatures}>
       <div className="mt-16">
         <h2 className="text-4xl text-center text-slate-800 mb-[70px]">
           <span className="font-normal">Compare</span>{" "}
@@ -267,21 +283,7 @@ export default function PricingTable() {
                   />
                 </TableCell>
               </TableRow>
-              
-              {!showAllFeatures && (
-                <TableRow>
-                  <TableCell colSpan={3} className="text-center border-b-0 py-8">
-                    <Button
-                      variant="outline"
-                      onClick={() => setShowAllFeatures(!showAllFeatures)}
-                      className="mx-auto flex items-center gap-2 px-6 py-2 text-[#742B8F] border-[#742B8F] hover:bg-[#742B8F] hover:text-white transition-all duration-300 rounded-full text-base font-medium shadow-sm hover:shadow-md"
-                    >
-                      Show More Features
-                      <ChevronDown className="h-5 w-5" />
-                    </Button>
-                  </TableCell>
-                </TableRow>
-              )}
+
               {showAllFeatures && (
                 <>
                   <TableRow>
@@ -333,21 +335,6 @@ export default function PricingTable() {
                     <TableCell className="font-medium text-left px-6 py-4">Full scale Assignments</TableCell>
                     <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
                     <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium text-left px-6 py-4">Virtual (ILT) & In-person Trainings management ( with full Attendance Management)</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium text-left px-6 py-4">Learning Path / Pathways</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium text-left px-6 py-4">Custom add-on feature or workflow development</TableCell>
-                    <TableCell className="text-center px-6 py-4">As Low as $25/hour</TableCell>
-                    <TableCell className="text-center px-6 py-4">As Low as $25/hour</TableCell>
                   </TableRow>
                 </>
               )}
