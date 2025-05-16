@@ -330,7 +330,7 @@ export default function PricingPage() {
                 className="w-full bg-white hover:bg-slate-100 text-slate-700 border-2 border-slate-300"
                 onClick={handleContactUs}
               >
-                Contact Us
+                Talk To Sales
               </Button>
             </CardFooter>
           </Card>
