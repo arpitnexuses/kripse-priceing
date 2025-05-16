@@ -14,7 +14,6 @@ import Image from "next/image"
 export default function PricingPage() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">("monthly")
   const [userCount, setUserCount] = useState(30)
-  const [freeUserCount, setFreeUserCount] = useState(10)
 
   const handleSignUp = () => {
     window.location.href = "https://kprise.mypasslms.us/login#register"
@@ -87,7 +86,7 @@ export default function PricingPage() {
             <CardHeader className="flex flex-row justify-between items-center">
               <CardTitle className="text-2xl text-slate-700">Free Forever</CardTitle>
               <div className="text-sm text-slate-500">
-                Users: {freeUserCount}
+                Up to 20 users
               </div>
             </CardHeader>
             <CardContent className="space-y-6 flex-grow">
@@ -97,17 +96,6 @@ export default function PricingPage() {
               </div>
               
               <div className="space-y-4">
-                <div className="space-y-2">
-                  <Slider
-                    id="free-user-count"
-                    min={1}
-                    max={20}
-                    step={1}
-                    value={[freeUserCount]}
-                    onValueChange={(value) => setFreeUserCount(value[0])}
-                    className="w-full text-[#742B8F]"
-                  />
-                </div>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-2">
                     <Image 
@@ -146,9 +134,6 @@ export default function PricingPage() {
           <Card className="border-2 border-[#742B8F] rounded-xl flex flex-col">
             <CardHeader className="flex flex-row justify-between items-center">
               <CardTitle className="text-2xl text-[#742B8F]">Evaluation</CardTitle>
-              <div className="text-sm text-slate-500">
-                Users: {userCount}
-              </div>
             </CardHeader>
             <CardContent className="space-y-6 flex-grow]">
               <div className="flex items-baseline">
@@ -158,6 +143,9 @@ export default function PricingPage() {
               
               <div className="space-y-4">
                 <div className="space-y-2">
+                  <div className="text-sm text-slate-500 text-left mb-[15px] mt-[-10px]">
+                    Users: {userCount}
+                  </div>
                   <Slider
                     id="user-count"
                     min={21}
@@ -208,7 +196,7 @@ export default function PricingPage() {
               <CardTitle className="text-2xl text-slate-700">Custom Enterprise</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 flex-grow">
-              <ul className="space-y-4">
+              <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <Image 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
@@ -238,6 +226,36 @@ export default function PricingPage() {
                     className="mt-0.5 flex-shrink-0"
                   />
                   <span className="leading-relaxed">Unlimited Users Included</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Image 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                    alt="Checkmark"
+                    width={20}
+                    height={20}
+                    className="mt-0.5 flex-shrink-0"
+                  />
+                  <span className="leading-relaxed">Unlimited storage</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Image 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                    alt="Checkmark"
+                    width={20}
+                    height={20}
+                    className="mt-0.5 flex-shrink-0"
+                  />
+                  <span className="leading-relaxed">Priority customer support</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Image 
+                    src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png"
+                    alt="Checkmark"
+                    width={20}
+                    height={20}
+                    className="mt-0.5 flex-shrink-0"
+                  />
+                  <span className="leading-relaxed">Smart AI Engine</span>
                 </li>
               </ul>
             </CardContent>

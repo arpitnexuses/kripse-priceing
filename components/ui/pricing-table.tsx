@@ -18,275 +18,259 @@ export default function PricingTable() {
           <Table className="w-full">
             <TableHeader>
               <TableRow>
-                <TableHead className="w-[300px] text-xl font-bold text-black">Feature</TableHead>
-                <TableHead className="text-xl font-bold text-black">Free Forever</TableHead>
-                <TableHead className="text-xl font-bold w-[120px] min-w-[300px] text-black">Evaluation</TableHead>
-                <TableHead className="text-xl font-bold text-black">Custom Enterprise</TableHead>
+                <TableHead className="w-[320px] text-xl font-bold text-black text-left px-6 py-4">Feature</TableHead>
+                <TableHead className="text-xl font-bold text-black text-center px-6 py-4">Free Forever</TableHead>
+                <TableHead className="text-xl font-bold w-[180px] min-w-[180px] text-black text-center px-6 py-4">Evaluation</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
-                <TableCell className="font-medium">Storage (Can be upgraded to a higher storage)</TableCell>
-                <TableCell>10 GB</TableCell>
-                <TableCell>20 GB</TableCell>
-                <TableCell>Contact Us</TableCell>
+                <TableCell className="font-medium text-left px-6 py-4">Storage (Can be upgraded to a higher storage)</TableCell>
+                <TableCell className="text-center px-6 py-4">10 GB</TableCell>
+                <TableCell className="text-center px-6 py-4">20 GB</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Course Creation & Management (Unlimited)</TableCell>
-                <TableCell>
+                <TableCell className="font-medium text-left px-6 py-4">Course Creation & Management (Unlimited)</TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell></TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">User Creation & Management</TableCell>
-                <TableCell>
+                <TableCell className="font-medium text-left px-6 py-4">User Creation & Management</TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell></TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Group Creation & Management</TableCell>
-                <TableCell>
+                <TableCell className="font-medium text-left px-6 py-4">Group Creation & Management</TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell></TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Progress Tracking & Reporting - user, Course & Assessment summary report</TableCell>
-                <TableCell>
+                <TableCell className="font-medium text-left px-6 py-4">Progress Tracking & Reporting - user, Course & Assessment summary report</TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell></TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Basic customization - Theme and custom colors - Branding & Logo</TableCell>
-                <TableCell>
+                <TableCell className="font-medium text-left px-6 py-4">Basic customization - Theme and custom colors - Branding & Logo</TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell></TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Full scale assessment engine for Assessments & Quizzes</TableCell>
-                <TableCell>
+                <TableCell className="font-medium text-left px-6 py-4">Full scale assessment engine for Assessments & Quizzes</TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell></TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Manage Questions & Question Pools (Create & manage)</TableCell>
-                <TableCell>
+                <TableCell className="font-medium text-left px-6 py-4">Manage Questions & Question Pools (Create & manage)</TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell></TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Communication Tools (e.g., Forums, Notification - Email & Dashboard for Courses, assessments and generic notifications- Create custom templates)</TableCell>
-                <TableCell>
+                <TableCell className="font-medium text-left px-6 py-4">Communication Tools (e.g., Forums, Notification - Email & Dashboard for Courses, assessments and generic notifications- Create custom templates)</TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell></TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Gamification</TableCell>
-                <TableCell>
+                <TableCell className="font-medium text-left px-6 py-4">Gamification</TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell></TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Dashboard Reports - Quickview</TableCell>
-                <TableCell>
+                <TableCell className="font-medium text-left px-6 py-4">Dashboard Reports - Quickview</TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell></TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Certificates Creation & Management</TableCell>
-                <TableCell>
+                <TableCell className="font-medium text-left px-6 py-4">Certificates Creation & Management</TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell></TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">In-Built SCORM authoring tool / generator of SCORM files from PDF and PPT on the fly</TableCell>
-                <TableCell>
+                <TableCell className="font-medium text-left px-6 py-4">In-Built SCORM authoring tool / generator of SCORM files from PDF and PPT on the fly</TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell></TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Custom Roles & Permissions driven by Groups</TableCell>
-                <TableCell>
+                <TableCell className="font-medium text-left px-6 py-4">Custom Roles & Permissions driven by Groups</TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell></TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Inbuilt Ticketing System for support (For Admins)</TableCell>
-                <TableCell>
+                <TableCell className="font-medium text-left px-6 py-4">Inbuilt Ticketing System for support (For Admins)</TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell>
+                <TableCell className="text-center px-6 py-4">
                   <img 
                     src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/Vector_(1)_e3f241be-e21f-4879-812a-0805e8358819.png" 
                     alt="checkmark" 
-                    className="h-5 w-5"
+                    className="h-5 w-5 mx-auto"
                   />
                 </TableCell>
-                <TableCell></TableCell>
               </TableRow>
               
               {!showAllFeatures && (
                 <TableRow>
-                  <TableCell colSpan={4} className="text-center border-b-0 py-8">
+                  <TableCell colSpan={3} className="text-center border-b-0 py-8">
                     <Button
                       variant="outline"
                       onClick={() => setShowAllFeatures(!showAllFeatures)}
@@ -301,82 +285,69 @@ export default function PricingTable() {
               {showAllFeatures && (
                 <>
                   <TableRow>
-                    <TableCell className="font-medium">Onboarding Journey</TableCell>
-                    <TableCell>Basic how to documentation</TableCell>
-                    <TableCell>Basic how to documentation and stepy guide</TableCell>
-                    <TableCell></TableCell>
+                    <TableCell className="font-medium text-left px-6 py-4">Onboarding Journey</TableCell>
+                    <TableCell className="text-center px-6 py-4">Basic how to documentation</TableCell>
+                    <TableCell className="text-center px-6 py-4">Basic how to documentation and stepy guide</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">Dedicated Support</TableCell>
-                    <TableCell>Unlimited Email Support</TableCell>
-                    <TableCell>Unlimited Priority Email Support, Chat Support, On Demand Phone support***</TableCell>
-                    <TableCell></TableCell>
+                    <TableCell className="font-medium text-left px-6 py-4">Dedicated Support</TableCell>
+                    <TableCell className="text-center px-6 py-4">Unlimited Email Support</TableCell>
+                    <TableCell className="text-center px-6 py-4">Unlimited Priority Email Support, Chat Support, On Demand Phone support***</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">AI Backed Content Recommendation</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell></TableCell>
+                    <TableCell className="font-medium text-left px-6 py-4">AI Backed Content Recommendation</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">AI based skill compliance matrix</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell></TableCell>
+                    <TableCell className="font-medium text-left px-6 py-4">AI based skill compliance matrix</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">In-Built SCORM authoring tool /generator of SCORM files from Video files on the fly</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell></TableCell>
+                    <TableCell className="font-medium text-left px-6 py-4">In-Built SCORM authoring tool /generator of SCORM files from Video files on the fly</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">Mobile Accessibility</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell></TableCell>
+                    <TableCell className="font-medium text-left px-6 py-4">Mobile Accessibility</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">Integrations</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell></TableCell>
+                    <TableCell className="font-medium text-left px-6 py-4">Integrations</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">Single Sign-On (SSO)</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell></TableCell>
+                    <TableCell className="font-medium text-left px-6 py-4">Single Sign-On (SSO)</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">Survey engine</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell></TableCell>
+                    <TableCell className="font-medium text-left px-6 py-4">Survey engine</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">Full scale Assignments</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell></TableCell>
+                    <TableCell className="font-medium text-left px-6 py-4">Full scale Assignments</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">Virtual (ILT) & In-person Trainings management ( with full Attendance Management)</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell></TableCell>
+                    <TableCell className="font-medium text-left px-6 py-4">Virtual (ILT) & In-person Trainings management ( with full Attendance Management)</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">Learning Path / Pathways</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell>Optional Add-on</TableCell>
-                    <TableCell></TableCell>
+                    <TableCell className="font-medium text-left px-6 py-4">Learning Path / Pathways</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">Custom add-on feature or workflow development</TableCell>
-                    <TableCell>As Low as $25/hour</TableCell>
-                    <TableCell>As Low as $25/hour</TableCell>
-                    <TableCell>As Low as $25/hour</TableCell>
+                    <TableCell className="font-medium text-left px-6 py-4">Custom add-on feature or workflow development</TableCell>
+                    <TableCell className="text-center px-6 py-4">As Low as $25/hour</TableCell>
+                    <TableCell className="text-center px-6 py-4">As Low as $25/hour</TableCell>
                   </TableRow>
                 </>
               )}
