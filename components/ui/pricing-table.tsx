@@ -15,12 +15,12 @@ export default function PricingTable() {
         </h2>
         
         <div className="w-full overflow-x-auto">
-          <Table className="w-full">
+          <Table className="w-full min-w-[1000px]">
             <TableHeader>
               <TableRow>
-                <TableHead className="w-[320px] text-xl font-bold text-black text-left px-6 py-4">Feature</TableHead>
+                <TableHead className="w-[500px] text-xl font-bold text-black text-left px-6 py-4">Feature</TableHead>
                 <TableHead className="text-xl font-bold text-black text-center px-6 py-4">Free Forever</TableHead>
-                <TableHead className="text-xl font-bold w-[180px] min-w-[180px] text-black text-center px-6 py-4">Evaluation</TableHead>
+                <TableHead className="text-xl font-bold w-[300px] min-w-[180px] text-black text-center px-6 py-4">Evaluation</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
