@@ -1,29 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 
 export default function PricingTable() {
-  const [showAllFeatures, setShowAllFeatures] = useState(false);
-
-  useEffect(() => {
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (mutation.type === 'attributes' && mutation.attributeName === 'data-show-all-features') {
-          const element = mutation.target as HTMLElement;
-          setShowAllFeatures(element.getAttribute('data-show-all-features') === 'true');
-        }
-      });
-    });
-
-    const element = document.querySelector('[data-show-all-features]');
-    if (element) {
-      observer.observe(element, { attributes: true });
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <div className="container mx-auto px-2 py-2 max-w-6xl" data-show-all-features={showAllFeatures}>
+    <div className="container mx-auto px-2 py-2 max-w-6xl">
       <div className="mt-16">
         <h2 className="text-4xl text-center text-slate-800 mb-[70px]">
           <span className="font-normal">Compare</span>{" "}
@@ -283,61 +263,56 @@ export default function PricingTable() {
                   />
                 </TableCell>
               </TableRow>
-
-              {showAllFeatures && (
-                <>
-                  <TableRow>
-                    <TableCell className="font-medium text-left px-6 py-4">Onboarding Journey</TableCell>
-                    <TableCell className="text-center px-6 py-4">Basic how to documentation</TableCell>
-                    <TableCell className="text-center px-6 py-4">Basic how to documentation and stepy guide</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium text-left px-6 py-4">Dedicated Support</TableCell>
-                    <TableCell className="text-center px-6 py-4">Unlimited Email Support</TableCell>
-                    <TableCell className="text-center px-6 py-4">Unlimited Priority Email Support, Chat Support, On Demand Phone support***</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium text-left px-6 py-4">AI Backed Content Recommendation</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium text-left px-6 py-4">AI based skill compliance matrix</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium text-left px-6 py-4">In-Built SCORM authoring tool /generator of SCORM files from Video files on the fly</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium text-left px-6 py-4">Mobile Accessibility</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium text-left px-6 py-4">Integrations</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium text-left px-6 py-4">Single Sign-On (SSO)</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium text-left px-6 py-4">Survey engine</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium text-left px-6 py-4">Full scale Assignments</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                    <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
-                  </TableRow>
-                </>
-              )}
+              <TableRow>
+                <TableCell className="font-medium text-left px-6 py-4">Onboarding Journey</TableCell>
+                <TableCell className="text-center px-6 py-4">Basic how to documentation</TableCell>
+                <TableCell className="text-center px-6 py-4">Basic how to documentation and stepy guide</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium text-left px-6 py-4">Dedicated Support</TableCell>
+                <TableCell className="text-center px-6 py-4">Unlimited Email Support</TableCell>
+                <TableCell className="text-center px-6 py-4">Unlimited Priority Email Support, Chat Support, On Demand Phone support***</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium text-left px-6 py-4">AI Backed Content Recommendation</TableCell>
+                <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium text-left px-6 py-4">AI based skill compliance matrix</TableCell>
+                <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium text-left px-6 py-4">In-Built SCORM authoring tool /generator of SCORM files from Video files on the fly</TableCell>
+                <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium text-left px-6 py-4">Mobile Accessibility</TableCell>
+                <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium text-left px-6 py-4">Integrations</TableCell>
+                <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium text-left px-6 py-4">Single Sign-On (SSO)</TableCell>
+                <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium text-left px-6 py-4">Survey engine</TableCell>
+                <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium text-left px-6 py-4">Full scale Assignments</TableCell>
+                <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+                <TableCell className="text-center px-6 py-4">Optional Add-on</TableCell>
+              </TableRow>
             </TableBody>
           </Table>
         </div>

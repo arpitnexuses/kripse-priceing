@@ -14,6 +14,7 @@ import Image from "next/image"
 export default function PricingPage() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">("monthly")
   const [userCount, setUserCount] = useState(30)
+  const [showComparison, setShowComparison] = useState(false)
 
   const handleSignUp = () => {
     window.location.href = "https://kprise.mypasslms.us/login#register"
@@ -339,15 +340,13 @@ export default function PricingPage() {
       <div className="flex justify-center mt-4 mb-12">
         <Button 
           onClick={() => {
-            const pricingTable = document.querySelector('.mt-16');
-            if (pricingTable) {
-              pricingTable.scrollIntoView({ behavior: 'smooth' });
-              // Set showAllFeatures to true in PricingTable component
-              const pricingTableComponent = document.querySelector('[data-show-all-features]');
-              if (pricingTableComponent) {
-                pricingTableComponent.setAttribute('data-show-all-features', 'true');
+            setShowComparison(true);
+            setTimeout(() => {
+              const pricingTable = document.querySelector('.mt-16');
+              if (pricingTable) {
+                pricingTable.scrollIntoView({ behavior: 'smooth' });
               }
-            }
+            }, 100);
           }}
           className="bg-[#742B8F] hover:bg-[#5a226f] text-white px-8 py-6 text-lg font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
         >
@@ -370,7 +369,7 @@ export default function PricingPage() {
 
       <LogoSection />
       
-      <PricingTable />
+      {showComparison && <PricingTable />}
     </>
   )
 }
