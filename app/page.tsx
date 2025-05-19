@@ -271,7 +271,7 @@ export default function PricingPage() {
                     height={20}
                     className="mt-0.5 flex-shrink-0"
                   />
-                  <span className="leading-relaxed">Above 500 starting as low as $2.50/User/Month Evaluation and much more.</span>
+                  <span className="leading-relaxed">Above 500 starting as low as $0.50/User/Month</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Image 
@@ -323,6 +323,25 @@ export default function PricingPage() {
                   />
                   <span className="leading-relaxed">Smart AI Engine</span>
                 </li>
+
+                {/* Highlighted Smart Data Retention Mode Section */}
+                <div className="bg-purple-50 p-4 rounded-lg border border-purple-200 mt-4">
+                  <div className="flex items-start gap-2">
+                    <Image 
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
+                      alt="Checkmark"
+                      width={20}
+                      height={20}
+                      className="mt-0.5 flex-shrink-0"
+                    />
+                    <div>
+                      <h4 className="font-semibold text-purple-800">Smart Data Retention Mode</h4>
+                      <p className="text-sm text-purple-700 mt-1">
+                        For seasonal or infrequent LMS users, we offer a 50% discounted data retention plan. Keep all your data secure during inactive months without needing to rebuild when you return—perfect for occasional use.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </ul>
             </CardContent>
             <CardFooter className="mt-auto">
