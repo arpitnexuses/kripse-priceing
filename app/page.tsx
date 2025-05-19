@@ -62,10 +62,14 @@ export default function PricingPage() {
   return (
     <>
       <div className="container mx-auto px-4 py-16 max-w-6xl">
-        <h1 className="text-5xl font-bold text-center text-slate-800 mb-4">Flexible Plans That Grow With You</h1>
-        <p className="text-center text-slate-600 mb-16 max-w-3xl mx-auto">
-          From startups to enterprises — choose the right plan, no hidden fees, no surprises.
-        </p>
+        <h1 className="text-5xl font-bold text-center text-slate-800 mb-4">
+          Equip Your Team With an
+          <br />
+          <span className="bg-[#742B8F]/10 text-[#742B8F] px-4 py-2 rounded inline-block mt-2">LMS That Actually Delivers Results</span>
+        </h1>
+        <div className="text-center text-slate-600 space-y-2 mb-16 max-w-3xl mx-auto">
+          <p className="text-xl">Subscription plans for every team size — simple pricing, no hidden fees.</p>
+        </div>
 
         <div className="flex items-center justify-center gap-4 mb-16">
           <span className={`text-xl font-medium ${billingCycle === "monthly" ? "text-[#742B8F]" : "text-slate-500"}`}>
