@@ -17,11 +17,11 @@ export default function PricingPage() {
   const [showComparison, setShowComparison] = useState(false)
 
   const handleSignUp = () => {
-    window.location.href = "https://kprise.mypasslms.us/login#register"
+    window.open("https://kprise.mypasslms.us/login#register", "_blank")
   }
 
   const handleContactUs = () => {
-    window.location.href = "https://kprise.com/contact-us-new/"
+    window.open("https://calendly.com/onlinesales-kprise/30min", "_blank")
   }
 
   // Pricing tiers based on user count
@@ -61,18 +61,18 @@ export default function PricingPage() {
 
   return (
     <>
-      <div className="container mx-auto px-4 py-16 max-w-6xl">
-        <h1 className="text-5xl font-bold text-center text-slate-800 mb-4">
+      <div className="container mx-auto px-4 py-8 md:py-16 max-w-6xl">
+        <h1 className="text-3xl md:text-5xl font-bold text-center text-slate-800 mb-4">
           Equip Your Team With an
           <br />
           <span className="bg-[#742B8F]/10 text-[#742B8F] px-4 py-2 rounded inline-block mt-2">LMS That Actually Delivers Results</span>
         </h1>
-        <div className="text-center text-slate-600 space-y-2 mb-16 max-w-3xl mx-auto">
-          <p className="text-xl">Subscription plans for every team size — simple pricing, no hidden fees.</p>
+        <div className="text-center text-slate-600 space-y-2 mb-8 md:mb-16 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl">Subscription plans for every team size — simple pricing, no hidden fees.</p>
         </div>
 
-        <div className="flex items-center justify-center gap-4 mb-16">
-          <span className={`text-xl font-medium ${billingCycle === "monthly" ? "text-[#742B8F]" : "text-slate-500"}`}>
+        <div className="flex items-center justify-center gap-4 mb-8 md:mb-16">
+          <span className={`text-lg md:text-xl font-medium ${billingCycle === "monthly" ? "text-[#742B8F]" : "text-slate-500"}`}>
             Monthly
           </span>
           <Switch
@@ -80,24 +80,24 @@ export default function PricingPage() {
             onCheckedChange={(checked) => setBillingCycle(checked ? "yearly" : "monthly")}
             className="data-[state=checked]:bg-[#742B8F]"
           />
-          <span className={`text-xl font-medium ${billingCycle === "yearly" ? "text-[#742B8F]" : "text-slate-500"}`}>
+          <span className={`text-lg md:text-xl font-medium ${billingCycle === "yearly" ? "text-[#742B8F]" : "text-slate-500"}`}>
             Yearly
           </span>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {/* Free Forever Card */}
           <Card className="border-2 border-slate-200 rounded-xl flex flex-col">
             <CardHeader className="flex flex-row justify-between items-center">
-              <CardTitle className="text-2xl text-slate-700">Free Forever</CardTitle>
+              <CardTitle className="text-xl md:text-2xl text-slate-700">Free Forever</CardTitle>
               <div className="text-sm text-slate-500">
                 Up to 20 users
               </div>
             </CardHeader>
-            <CardContent className="space-y-6 flex-grow">
+            <CardContent className="space-y-4 md:space-y-6 flex-grow">
               <div className="flex items-baseline">
-                <h3 className="text-5xl font-bold text-slate-800">0$</h3>
-                <span className="text-xl text-slate-600 ml-2">/Month</span>
+                <h3 className="text-4xl md:text-5xl font-bold text-slate-800">0$</h3>
+                <span className="text-lg md:text-xl text-slate-600 ml-2">/Month</span>
               </div>
               
               <div className="space-y-4">
@@ -168,17 +168,17 @@ export default function PricingPage() {
           {/* Evaluation Card */}
           <Card className="border-2 border-[#742B8F] rounded-xl flex flex-col">
             <CardHeader className="flex flex-row justify-between items-center">
-              <CardTitle className="text-2xl text-[#742B8F]">Evaluation</CardTitle>
+              <CardTitle className="text-xl md:text-2xl text-[#742B8F]">Evaluation</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6 flex-grow]">
+            <CardContent className="space-y-4 md:space-y-6 flex-grow">
               {billingCycle === "yearly" && (
                 <div className="text-sm text-[#742B8F] text-left font-medium -mt-2 mb-1 bg-purple-50 px-3 py-1.5 rounded-md">
                   Price applies when paid annually in a single payment
                 </div>
               )}
               <div className="flex items-baseline">
-                <h3 className="text-5xl font-bold text-slate-800">{getCurrentPrice()}$</h3>
-                <span className="text-xl text-slate-600 ml-2">/Month</span>
+                <h3 className="text-4xl md:text-5xl font-bold text-slate-800">{getCurrentPrice()}$</h3>
+                <span className="text-lg md:text-xl text-slate-600 ml-2">/Month</span>
               </div>
               
               <div className="space-y-4">
@@ -263,9 +263,9 @@ export default function PricingPage() {
           {/* Custom Enterprise Card */}
           <Card className="border-2 border-slate-200 rounded-xl flex flex-col">
             <CardHeader>
-              <CardTitle className="text-2xl text-slate-700">Custom Enterprise</CardTitle>
+              <CardTitle className="text-xl md:text-2xl text-slate-700">Custom Enterprise</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6 flex-grow">
+            <CardContent className="space-y-4 md:space-y-6 flex-grow">
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <Image 
@@ -351,7 +351,7 @@ export default function PricingPage() {
         </div>
       </div>
 
-      <div className="flex justify-center mt-4 mb-12">
+      <div className="flex justify-center mt-4 mb-8 md:mb-12">
         <Button 
           onClick={() => {
             setShowComparison(true);
@@ -362,19 +362,20 @@ export default function PricingPage() {
               }
             }, 100);
           }}
-          className="bg-[#742B8F] hover:bg-[#5a226f] text-white px-8 py-6 text-lg font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
+          className="bg-[#742B8F] hover:bg-[#5a226f] text-white px-6 md:px-8 py-4 md:py-6 text-base md:text-lg font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
         >
           Compare All Features
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
-            width="24" 
-            height="24" 
+            width="20" 
+            height="20" 
             viewBox="0 0 24 24" 
             fill="none" 
             stroke="currentColor" 
             strokeWidth="2" 
             strokeLinecap="round" 
             strokeLinejoin="round"
+            className="md:w-6 md:h-6"
           >
             <path d="M12 5v14M5 12h14"/>
           </svg>
