@@ -94,6 +94,76 @@ export default function PricingTable() {
       description: "Driven by Groups",
       free: true,
       evaluation: true
+    },
+    {
+      name: "Onboarding Journey",
+      description: "Basic how to documentation",
+      free: "Basic how to documentation",
+      evaluation: "Basic how to documentation and steppy guide"
+    },
+    {
+      name: "Dedicated Support",
+      description: "Support options",
+      free: "Unlimited Email Support",
+      evaluation: "Unlimited Priority Email Support, Chat Support, On Demand Phone support***"
+    },
+    {
+      name: "AI Backed Content Recommendation",
+      description: "System Courses and external courses",
+      free: "Optional Add-on",
+      evaluation: "Optional Add-on"
+    },
+    {
+      name: "AI based skill compliance matrix",
+      free: "Optional Add-on",
+      evaluation: "Optional Add-on"
+    },
+    {
+      name: "In-Built SCORM authoring tool",
+      description: "Generator of SCORM files from Video Files on the fly",
+      free: "Optional Add-on",
+      evaluation: "Optional Add-on"
+    },
+    {
+      name: "Mobile Accessibility",
+      free: "Optional Add-on",
+      evaluation: "Optional Add-on"
+    },
+    {
+      name: "Integrations",
+      free: "Optional Add-on",
+      evaluation: "Optional Add-on"
+    },
+    {
+      name: "Single Sign-On (SSO)",
+      free: "Optional Add-on",
+      evaluation: "Optional Add-on"
+    },
+    {
+      name: "Survey engine",
+      free: "Optional Add-on",
+      evaluation: "Optional Add-on"
+    },
+    {
+      name: "Full scale Assignments",
+      free: "Optional Add-on",
+      evaluation: "Optional Add-on"
+    },
+    {
+      name: "Virtual (ILT) & In-person Trainings management",
+      description: "With full Attendance Management",
+      free: "Optional Add-on",
+      evaluation: "Optional Add-on"
+    },
+    {
+      name: "Learning Path / Pathways",
+      free: "Optional Add-on",
+      evaluation: "Optional Add-on"
+    },
+    {
+      name: "Custom add-on feature or workflow development",
+      free: "As Low as $25/Hour",
+      evaluation: "As Low as $25/Hour"
     }
   ];
 
@@ -106,55 +176,75 @@ export default function PricingTable() {
         </h2>
 
         {/* Mobile View */}
-        <div className="md:hidden space-y-4">
-          {features.map((feature, index) => (
-            <div key={index} className="bg-white rounded-lg border border-slate-300 p-4 shadow-sm">
-              <h3 className="font-medium text-sm mb-1">{feature.name}</h3>
-              {feature.description && (
-                <p className="text-xs text-slate-600 mb-3">{feature.description}</p>
-              )}
-              <div className="grid grid-cols-2 gap-4">
-                <div className="text-center">
-                  <p className="text-xs font-semibold mb-2">Free Forever</p>
-                  {typeof feature.free === 'boolean' ? (
-                    <img
-                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
-                      alt="checkmark"
-                      className="h-4 w-4 mx-auto"
-                    />
-                  ) : (
-                    <p className="text-sm font-semibold">{feature.free}</p>
-                  )}
-                </div>
-                <div className="text-center">
-                  <p className="text-xs font-semibold mb-2">Evaluation</p>
-                  {typeof feature.evaluation === 'boolean' ? (
-                    <img
-                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
-                      alt="checkmark"
-                      className="h-4 w-4 mx-auto"
-                    />
-                  ) : (
-                    <p className="text-sm font-semibold">{feature.evaluation}</p>
-                  )}
-                </div>
-              </div>
-            </div>
-          ))}
-          <div className="grid grid-cols-2 gap-4 mt-6">
-            <Button
-              onClick={handleSignUp}
-              className="w-full bg-[#742B8F] hover:bg-[#5a226f] text-white py-2 text-xs font-medium"
-            >
-              Sign Up For Free
-            </Button>
-            <Button
-              onClick={handleSignUp}
-              className="w-full bg-[#742B8F] hover:bg-[#5a226f] text-white py-2 text-xs font-medium"
-            >
-              Sign Up For Free
-            </Button>
-          </div>
+        <div className="md:hidden w-full overflow-x-auto rounded-xl border-2 border-[#742B8F]">
+          <Table className="w-full min-w-[600px]">
+            <TableHeader className="bg-slate-50">
+              <TableRow className="border-b-2 border-[#742B8F]">
+                <TableHead className="w-[300px] text-lg font-bold text-black text-left px-4 py-4">
+                  Features
+                </TableHead>
+                <TableHead className="text-lg font-bold text-black text-center px-4 py-4">
+                  Free Forever
+                </TableHead>
+                <TableHead className="text-lg font-bold text-black text-center px-4 py-4">
+                  Evaluation
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {features.map((feature, index) => (
+                <TableRow key={index} className="border-b border-slate-200 hover:bg-slate-50 transition-colors">
+                  <TableCell className="font-medium text-sm text-left px-4 py-4">
+                    {feature.name}
+                    {feature.description && (
+                      <p className="text-xs text-slate-600 mt-1">{feature.description}</p>
+                    )}
+                  </TableCell>
+                  <TableCell className="text-center px-4 py-4">
+                    {typeof feature.free === 'boolean' ? (
+                      <img
+                        src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
+                        alt="checkmark"
+                        className="h-5 w-5 mx-auto"
+                      />
+                    ) : (
+                      <span className="font-semibold text-sm">{feature.free}</span>
+                    )}
+                  </TableCell>
+                  <TableCell className="text-center px-4 py-4">
+                    {typeof feature.evaluation === 'boolean' ? (
+                      <img
+                        src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
+                        alt="checkmark"
+                        className="h-5 w-5 mx-auto"
+                      />
+                    ) : (
+                      <span className="font-semibold text-sm">{feature.evaluation}</span>
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+              <TableRow>
+                <TableCell className="px-4 py-4"></TableCell>
+                <TableCell className="px-4 py-4 text-center">
+                  <Button
+                    onClick={handleSignUp}
+                    className="w-full bg-[#742B8F] hover:bg-[#5a226f] text-white py-2 text-sm font-medium"
+                  >
+                    Sign Up For Free
+                  </Button>
+                </TableCell>
+                <TableCell className="px-4 py-4 text-center">
+                  <Button
+                    onClick={handleSignUp}
+                    className="w-full bg-[#742B8F] hover:bg-[#5a226f] text-white py-2 text-sm font-medium"
+                  >
+                    Sign Up For Free
+                  </Button>
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
         </div>
 
         {/* Desktop View */}
