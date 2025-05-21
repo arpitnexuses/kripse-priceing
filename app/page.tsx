@@ -356,9 +356,9 @@ export default function PricingPage() {
           onClick={() => {
             setShowComparison(true);
             setTimeout(() => {
-              const pricingTable = document.querySelector('.mt-16');
+              const pricingTable = document.querySelector('.container.mx-auto.px-4.py-2.max-w-7xl');
               if (pricingTable) {
-                pricingTable.scrollIntoView({ behavior: 'smooth' });
+                pricingTable.scrollIntoView({ behavior: 'smooth', block: 'start' });
               }
             }, 100);
           }}
