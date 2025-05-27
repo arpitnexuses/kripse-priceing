@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 
 export default function PricingTable() {
   const handleSignUp = () => {
-    window.open("https://kprise.mypasslms.us/login#register", "_blank")
+    window.open("https://mypass-waitlist.vercel.app/", "_blank")
   };
 
   const features = [

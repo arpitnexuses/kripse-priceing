@@ -17,7 +17,7 @@ export default function PricingPage() {
   const [showComparison, setShowComparison] = useState(false)
 
   const handleSignUp = () => {
-    window.open("https://kprise.mypasslms.us/login#register", "_blank")
+    window.open("https://mypass-waitlist.vercel.app/", "_blank")
   }
 
   const handleContactUs = () => {
