@@ -12,7 +12,7 @@ import PricingTable from "@/components/ui/pricing-table"
 import Image from "next/image"
 
 export default function PricingPage() {
-  const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">("monthly")
+  const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">("yearly")
   const [userCount, setUserCount] = useState(30)
   const [showComparison, setShowComparison] = useState(false)
 
@@ -173,7 +173,7 @@ export default function PricingPage() {
             <CardContent className="space-y-4 md:space-y-6 flex-grow">
               {billingCycle === "yearly" && (
                 <div className="text-sm text-[#742B8F] text-left font-medium -mt-2 mb-1 bg-purple-50 px-3 py-1.5 rounded-md">
-                  Price applies when paid annually in a single payment
+                  Save 20% per month with annual payment
                 </div>
               )}
               <div className="flex items-baseline">
