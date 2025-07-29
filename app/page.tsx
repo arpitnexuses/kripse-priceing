@@ -13,7 +13,7 @@ import Image from "next/image"
 
 export default function PricingPage() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">("yearly")
-  const [userCount, setUserCount] = useState(30)
+  const [userCount, setUserCount] = useState(100)
   const [showComparison, setShowComparison] = useState(false)
 
   const handleSignUp = () => {
@@ -26,30 +26,11 @@ export default function PricingPage() {
 
   // Pricing tiers based on user count
   const pricingTiers = [
-    { min: 21, max: 40, monthly: 119.0, yearly: 95.2 },
-    { min: 41, max: 60, monthly: 149.0, yearly: 119.2 },
-    { min: 61, max: 80, monthly: 169.0, yearly: 135.2 },
-    { min: 81, max: 100, monthly: 189.0, yearly: 151.2 },
-    { min: 101, max: 120, monthly: 209.0, yearly: 167.2 },
-    { min: 121, max: 140, monthly: 229.0, yearly: 183.2 },
-    { min: 141, max: 160, monthly: 249.0, yearly: 199.2 },
-    { min: 161, max: 180, monthly: 269.0, yearly: 215.2 },
-    { min: 181, max: 200, monthly: 289.0, yearly: 231.2 },
-    { min: 201, max: 220, monthly: 309.0, yearly: 247.2 },
-    { min: 221, max: 240, monthly: 329.0, yearly: 263.2 },
-    { min: 241, max: 260, monthly: 359.0, yearly: 287.2 },
-    { min: 261, max: 280, monthly: 379.0, yearly: 303.2 },
-    { min: 281, max: 300, monthly: 399.0, yearly: 319.2 },
-    { min: 301, max: 320, monthly: 419.0, yearly: 335.2 },
-    { min: 321, max: 340, monthly: 439.0, yearly: 351.2 },
-    { min: 341, max: 360, monthly: 459.0, yearly: 367.2 },
-    { min: 361, max: 380, monthly: 479.0, yearly: 383.2 },
-    { min: 381, max: 400, monthly: 499.0, yearly: 399.2 },
-    { min: 401, max: 420, monthly: 519.0, yearly: 415.2 },
-    { min: 421, max: 440, monthly: 539.0, yearly: 431.2 },
-    { min: 441, max: 460, monthly: 559.0, yearly: 447.2 },
-    { min: 461, max: 480, monthly: 579.0, yearly: 463.2 },
-    { min: 481, max: 500, monthly: 599.0, yearly: 479.2 },
+    { min: 21, max: 100, monthly: 140.0, yearly: 98.0, save: 504 },
+    { min: 101, max: 200, monthly: 260.0, yearly: 182.0, save: 936 },
+    { min: 201, max: 300, monthly: 370.0, yearly: 259.0, save: 1332 },
+    { min: 301, max: 400, monthly: 480.0, yearly: 336.0, save: 1728 },
+    { min: 401, max: 500, monthly: 580.0, yearly: 406.0, save: 2088 },
   ]
 
   // Find the current price based on user count
@@ -57,6 +38,12 @@ export default function PricingPage() {
     const tier = pricingTiers.find((tier) => userCount >= tier.min && userCount <= tier.max)
     if (!tier) return pricingTiers[0].monthly
     return billingCycle === "monthly" ? tier.monthly : tier.yearly
+  }
+
+  // Get the current tier and savings
+  const getCurrentTier = () => {
+    const tier = pricingTiers.find((tier) => userCount >= tier.min && userCount <= tier.max)
+    return tier || pricingTiers[0]
   }
 
   return (
@@ -80,9 +67,21 @@ export default function PricingPage() {
             onCheckedChange={(checked) => setBillingCycle(checked ? "yearly" : "monthly")}
             className="data-[state=checked]:bg-[#742B8F]"
           />
-          <span className={`text-lg md:text-xl font-medium ${billingCycle === "yearly" ? "text-[#742B8F]" : "text-slate-500"}`}>
-            Yearly
-          </span>
+          <div className="flex items-center gap-2">
+            <span className={`text-lg md:text-xl font-medium ${billingCycle === "yearly" ? "text-[#742B8F]" : "text-slate-500"}`}>
+              Yearly
+            </span>
+            {billingCycle === "yearly" && (
+              <div className="bg-gradient-to-r from-[#742B8F] to-[#8B5A96] text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg border border-white">
+                <div className="flex items-center gap-1">
+                  <span>-30%</span>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
@@ -97,7 +96,7 @@ export default function PricingPage() {
             <CardContent className="space-y-4 md:space-y-6 flex-grow">
               <div className="flex items-baseline">
                 <h3 className="text-4xl md:text-5xl font-bold text-slate-800">0$</h3>
-                <span className="text-lg md:text-xl text-slate-600 ml-2">/Month</span>
+                <span className="text-lg md:text-xl text-slate-600 ml-2">/Year</span>
               </div>
               
               <div className="space-y-4">
@@ -111,6 +110,26 @@ export default function PricingPage() {
                       className="mt-0.5 flex-shrink-0"
                     />
                     <span>Upto 20 users</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Image 
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
+                      alt="Checkmark"
+                      width={20}
+                      height={20}
+                      className="mt-0.5 flex-shrink-0"
+                    />
+                    <span>Upto 5 Courses or Assessments</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Image 
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
+                      alt="Checkmark"
+                      width={20}
+                      height={20}
+                      className="mt-0.5 flex-shrink-0"
+                    />
+                    <span>Upto 3 Groups/Branches</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Image 
@@ -168,31 +187,34 @@ export default function PricingPage() {
           {/* Evaluation Card */}
           <Card className="border-2 border-[#742B8F] rounded-xl flex flex-col">
             <CardHeader className="flex flex-row justify-between items-center">
-              <CardTitle className="text-xl md:text-2xl text-[#742B8F]">Evaluation</CardTitle>
+              <CardTitle className="text-xl md:text-2xl text-[#742B8F]">Growth</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 md:space-y-6 flex-grow">
-              {billingCycle === "yearly" && (
-                <div className="text-sm text-[#742B8F] text-left font-medium -mt-2 mb-1 bg-purple-50 px-3 py-1.5 rounded-md">
-                  Save 20% per month with annual payment
-                </div>
-              )}
               <div className="flex items-baseline">
                 <h3 className="text-4xl md:text-5xl font-bold text-slate-800">{getCurrentPrice()}$</h3>
-                <span className="text-lg md:text-xl text-slate-600 ml-2">/Month</span>
+                <span className="text-lg md:text-xl text-slate-600 ml-2">
+                  /{billingCycle === "yearly" ? "Yearly" : "Month"}
+                  {billingCycle === "yearly" && (
+                    <span className="text-sm text-[#742B8F] font-medium"> (Save ${getCurrentTier().save})</span>
+                  )}
+                </span>
               </div>
               
               <div className="space-y-4">
                 <div className="space-y-2">
                   <div className="text-sm text-slate-500 text-left mb-[15px] mt-[-10px]">
-                    Users: {userCount}
+                    Users: {getCurrentTier().min}-{getCurrentTier().max}
                   </div>
                   <Slider
                     id="user-count"
-                    min={21}
-                    max={500}
+                    min={0}
+                    max={4}
                     step={1}
-                    value={[userCount]}
-                    onValueChange={(value) => setUserCount(value[0])}
+                    value={[pricingTiers.findIndex(tier => userCount >= tier.min && userCount <= tier.max)]}
+                    onValueChange={(value) => {
+                      const selectedTier = pricingTiers[value[0]]
+                      setUserCount(selectedTier.max)
+                    }}
                     className="w-full text-[#742B8F]"
                   />
                 </div>
@@ -215,6 +237,16 @@ export default function PricingPage() {
                       height={20}
                       className="mt-0.5 flex-shrink-0"
                     />
+                    <span>Per user pricing: $6.67 - $1.40/user/month</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Image 
+                      src="https://cdn-nexlink.s3.us-east-2.amazonaws.com/mdi_tick-circle_2667d89c-7d52-445f-ac2a-b95b7754a4b0.png"
+                      alt="Checkmark"
+                      width={20}
+                      height={20}
+                      className="mt-0.5 flex-shrink-0"
+                    />
                     <span className="leading-relaxed">Free access for 3 months and extendable upto 6 months with verification</span>
                   </li>
                   <li className="flex items-start gap-2">
@@ -225,7 +257,7 @@ export default function PricingPage() {
                       height={20}
                       className="mt-0.5 flex-shrink-0"
                     />
-                    <span>Storage upto 20GB</span>
+                    <span>Storage upto 100GB</span>
                   </li>
                   {/* <li className="flex items-start gap-2">
                     <Image 
@@ -263,7 +295,7 @@ export default function PricingPage() {
           {/* Custom Enterprise Card */}
           <Card className="border-2 border-slate-200 rounded-xl flex flex-col">
             <CardHeader>
-              <CardTitle className="text-xl md:text-2xl text-slate-700">Custom Enterprise</CardTitle>
+              <CardTitle className="text-xl md:text-2xl text-slate-700">Enterprise</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 md:space-y-6 flex-grow">
               <ul className="space-y-2">
